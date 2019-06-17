@@ -11,9 +11,11 @@ namespace PokerHands
         static void Main(string[] args)
         {
             Deck myDeck = new Deck();
+            Hands playerHands = new Hands();
 
             myDeck.Shuffle();
-            myDeck.ShowDeck();
+            playerHands.dealCards(myDeck, "Carl", "Eddie");
+            playerHands.showHands();
         }
     }
 }
