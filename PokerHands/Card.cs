@@ -6,34 +6,34 @@ using System.Threading.Tasks;
 
 namespace PokerHands
 {
+    public enum Suit
+    {
+        Clubs,
+        Diamonds,
+        Hearts,
+        Spades
+    }
+
+    public enum Value
+    {
+        Two = 2,
+        Three,
+        Four,
+        Five,
+        Six,
+        Seven,
+        Eight,
+        Nine,
+        Ten,
+        Jack,
+        Queen,
+        King,
+        Ace
+    }
+
     public class Card  //Cards consist of suits and values
     {
-        public enum Suit
-        {
-            Clubs,
-            Diamonds,
-            Hearts,
-            Spades
-        }
-
-        public enum Value
-        {
-            Two = 2,
-            Three,
-            Four,
-            Five,
-            Six,
-            Seven,
-            Eight,
-            Nine,
-            Ten,
-            Jack,
-            Queen,
-            King,
-            Ace
-        }
-
-        public Suit CardSuit { get; set; }
-        public Value CardValue { get; set; }
+        public Suit CardSuit;
+        public Value CardValue;
     }
 }
