@@ -13,9 +13,9 @@ namespace PokerHands
             Deck myDeck = new Deck();
             Hands playerHands = new Hands();
 
-            myDeck.Shuffle();
-            playerHands.dealCards(myDeck, "Carl", "Eddie");
-            playerHands.showHands();
+            playerHands.DealCards("Carl", "Eddie");
+            playerHands.ShowHands();
+            playerHands.EvaluateWinner();
         }
     }
 }
